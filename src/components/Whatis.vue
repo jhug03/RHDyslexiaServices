@@ -3,7 +3,7 @@
     <div class="space-y-8 text-white">
         <!-- Dyslexia Section -->
         <section
-            class="flex flex-col md:flex-row gap-8 items-center max-w-6xl 2xl:max-w-none ml-auto rounded-l-2xl bg-secondary p-10">
+            class="flex flex-col md:flex-row gap-8 items-center max-w-6xl 2xl:max-w-none ml-auto rounded-l-2xl bg-secondary p-5 md:p-10">
             <div class="w-full md:w-1/3">
                 <img src="../../src/assets/girl-reading.webp" alt="What is Dyslexia?"
                     class="w-full h-[400px] object-cover rounded-lg shadow-lg" title="What is Dyslexia?">
@@ -71,10 +71,10 @@
                 </router-link>
             </div>
         </section>
-        s
+        
         <!-- Qualifications Section -->
         <section
-            class="flex flex-col md:flex-row gap-8 items-center max-w-6xl 2xl:max-w-none ml-auto rounded-l-2xl bg-secondary p-10">
+            class="flex flex-col md:flex-row gap-8 items-center max-w-6xl 2xl:max-w-none ml-auto rounded-l-2xl bg-secondary p-5 md:p-10">
             <div class="w-full md:w-1/3">
                 <img src="../../src/assets/numbers.webp" alt="Dyslexia Tutor Qualifications"
                     class="w-full h-[400px] object-cover rounded-lg shadow-lg" title="Dyslexia Tutor Qualifications">
@@ -129,7 +129,7 @@
 
         <!-- Help at Home Section -->
         <section
-            class="flex flex-col md:flex-row gap-8 items-center max-w-6xl 2xl:max-w-none mr-auto rounded-r-2xl bg-secondary p-10">
+            class="flex flex-col md:flex-row gap-8 items-center max-w-6xl 2xl:max-w-none mr-auto rounded-r-2xl bg-secondary p-5 md:p-10">
 
             <div class="w-full md:w-2/3 space-y-4">
                 <h3 class="text-3xl uppercase font-bold">How can I help my child at home?</h3>
@@ -156,7 +156,7 @@
 
         <!-- Working Memory Section -->
         <section
-            class="flex flex-col md:flex-row gap-8 items-center max-w-6xl 2xl:max-w-none ml-auto rounded-l-2xl bg-secondary p-10">
+            class="flex flex-col md:flex-row gap-8 items-center max-w-6xl 2xl:max-w-none ml-auto rounded-l-2xl bg-secondary p-5 md:p-10">
             <div class="w-full md:w-1/3">
                 <img src="../../src/assets/girl-reading.webp" alt="Supporting Working Memory"
                     class="w-full h-[400px] object-cover rounded-lg shadow-lg" title="Supporting Working Memory">

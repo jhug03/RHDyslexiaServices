@@ -1,8 +1,13 @@
 <script setup>
-import { ref } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
 
 
 const isMenuOpen = ref(false);
+const isScrolled = ref(false);
+
+const handleScroll = () => {
+    isScrolled.value = window.scrollY > 0;
+};
 
 const toggleMenu = () => {
     const icon = document.querySelector('.icon');
@@ -15,10 +20,19 @@ const toggleMenu = () => {
         nav.classList.remove('open');
     }
 }
+
+onMounted(() => {
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+});
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll);
+});
 </script>
 
 <template>
-    <nav class="shadow-lg shadow-black/30 bg-primary/80 backdrop-blur-md fixed w-full h-14 sm:h-auto duration-300 text-sm z-50 flex items-center justify-center">
+    <nav class="shadow-lg shadow-black/30 bg-primary/50 backdrop-blur-sm border-b border-white/10 fixed w-full h-14 sm:h-auto duration-300 text-sm z-50 flex items-center justify-center">
 
         <button @click="toggleMenu" type="button" class="icon sm:!hidden flex nav-icon-2">
             <span></span>
@@ -37,7 +51,7 @@ const toggleMenu = () => {
             <li><router-link role="button" to="/contact" class="mobile-nav-link">Contact</router-link></li>
         </ul>
 
-        <div class="hidden sm:flex items-center justify-between px-7 gap-8 text-white/85 font-light py-4 mx-auto w-full">
+        <div :class="['hidden sm:flex items-center justify-between px-7 gap-8 text-white/85 font-light mx-auto w-full nav-content', isScrolled ? 'py-2' : 'py-4']">
             <ul class="items-center gap-8 flex">
                 <li><a href="/" class="italic font-bold text-base font-[cursive]">RHDyslexia</a></li>
                 <li>
@@ -190,5 +204,9 @@ nav.open .mobile-nav {
 
 .mobile-nav-link:hover::after {
     width: 100%;
+}
+
+.nav-content {
+    transition: padding 300ms ease-in-out;
 }
 </style>

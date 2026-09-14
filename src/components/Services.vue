@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-4xl mx-auto px-10 text-white mt-10">
+    <div class="max-w-4xl mx-auto px-4 md:px-10 text-white mt-10">
         <h1 class="uppercase text-center text-4xl">Rebecca hughes - specialist teacher</h1>
         <p class="font-light mt-4 italic text-center">I have over 20 years of experience and am fully qualified. I offer
             a professional service and am passionate about helping your child overcome their issues. By working

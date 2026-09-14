@@ -1,7 +1,7 @@
 <template>
     <div class="space-y-8 text-white">
         <section
-            class="flex flex-col 2xl:flex-row gap-8 items-center bg-secondary p-10 max-w-6xl 2xl:max-w-none ml-auto rounded-l-2xl">
+            class="flex flex-col 2xl:flex-row gap-8 items-center bg-secondary p-5 md:p-10 max-w-6xl 2xl:max-w-none ml-auto rounded-l-2xl">
             <div class="w-full md:w-1/3">
                 <img src="../../src/assets/boy-reading.webp" alt="What is Dyslexia?"
                     class="w-full h-[400px] object-cover rounded-lg shadow-lg" title="What is Dyslexia?">
@@ -35,7 +35,7 @@
         </section>
 
         <section
-            class="flex flex-col gap-8 items-center bg-secondary p-10 max-w-6xl 2xl:max-w-none mr-auto rounded-r-2xl">
+            class="flex flex-col gap-8 items-center bg-secondary p-5 md:p-10  max-w-6xl 2xl:max-w-none mr-auto rounded-r-2xl">
             <div class="w-full space-y-4">
                 <h3 class="text-3xl uppercase font-bold">SHORTER SCREENING ASSESSMENTS</h3>
 
@@ -46,7 +46,7 @@
                     and spelling. You will receive a streamlined report outlining strengths, areas for
                     development, and tailored recommendations. Please note that this assessment does
                     not provide a diagnostic conclusion.
-                    The cost is £250.
+                    The cost is £300.
                     <br>
                     <br>
                     I also offer a shorter maths assessment that explores key cognitive areas such as

@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-secondary p-10 flex flex-col sm:flex-row items-start justify-center max-w-5xl my-10 mx-4 sm:mx-auto rounded-lg gap-8"
+    <div class="bg-secondary p-5 md:p-10 flex flex-col sm:flex-row items-start justify-center max-w-5xl my-10 mx-4 sm:mx-auto rounded-lg gap-8"
         id="qualifications">
 
         <img src="../../src/assets/my-face.jpg" alt="Picture of my face" title="Picture of my face"
