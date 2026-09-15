@@ -32,7 +32,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <nav class="shadow-lg shadow-black/30 bg-primary/50 backdrop-blur-sm border-b border-white/10 fixed w-full h-14 sm:h-auto duration-300 text-sm z-50 flex items-center justify-center">
+    <nav class="shadow-lg shadow-black/30 bg-primary/50 backdrop-blur-md border-b border-white/10 fixed w-full h-14 sm:h-auto duration-300 text-sm z-50 flex items-center justify-center">
 
         <button @click="toggleMenu" type="button" class="icon sm:!hidden flex nav-icon-2">
             <span></span>

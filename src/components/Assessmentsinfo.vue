@@ -39,24 +39,28 @@
             <div class="w-full space-y-4">
                 <h3 class="text-3xl uppercase font-bold">SHORTER SCREENING ASSESSMENTS</h3>
 
-                <p>I offer a <strong>shorter, focused assessment</strong> covering core literacy and core maths skills.
-                    The literacy component takes <strong>approximately 1.5 hours</strong> and explores key cognitive
-                    areas
-                    including language, memory, and phonological processing, alongside reading, writing,
+                <h2 class="underline font-bold text-lg pt-4">Shorter English Assessment</h2>
+                <p>I offer a
+                    <strong>shorter, focused assessment</strong>
+                    covering core literacy and core maths skills.
+                    The literacy component takes
+                    <strong>approximately 1.5 hours</strong>
+                    and explores key cognitive areas including language, memory, and phonological processing, alongside
+                    reading, writing,
                     and spelling. You will receive a streamlined report outlining strengths, areas for
                     development, and tailored recommendations. Please note that this assessment does
                     not provide a diagnostic conclusion.
                     The cost is £300.
-                    <br>
-                    <br>
-                    I also offer a shorter maths assessment that explores key cognitive areas such as
+                </p>
+                <h2 class="underline pt-4 font-bold text-lg">Shorter Maths Assessment</h2>
+                <p>I also offer a <strong>shorter maths assessment</strong> that explores key cognitive areas such as
                     memory, processing, and language, alongside core number skills. These include
                     counting, number bonds, estimation, subitising, place value, mathematical fluency,
                     understanding magnitude, and a brief 15minute maths test.
                     You will receive a concise report outlining strengths, areas for development, and
                     practical recommendations. Please note that this assessment does not diagnose maths
                     difficulties or dyscalculia.
-                    The assessment takes approximately two hours and costs £250.
+                    The assessment takes approximately two hours and costs £300.
                 </p>
 
                 <p>Please note that I will require a £100 deposit for assessments, with the remaining fee to be paid the
