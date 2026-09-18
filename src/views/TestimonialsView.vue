@@ -103,20 +103,17 @@ const stats = computed(() => {
 <template>
     <NavBar />
     <Introwhatis title="Testimonials" description="Read what my clients have to say about me and my services." />
-    
     <!-- Stats Section -->
     <section class="container mx-auto px-4 pb-8 mt-4">
         <div class="max-w-4xl mx-auto flex justify-center gap-12 border-b border-gray-200 text-white/80 pb-8">
             <div class="text-center">
-                <div class="flex items-center gap-2">
-                    <span class="text-3xl font-bold">{{ stats.avgRating }}</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                         viewBox="0 0 24 24" 
-                         fill="currentColor" 
-                         class="w-6 h-6 text-amber-400">
-                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                    </svg>
-                </div>
+                <div class="flex items-center gap-2"> <span class="text-3xl font-bold">{{ stats.avgRating }}</span> <svg
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-6 h-6 text-amber-400">
+                        <path fill-rule="evenodd"
+                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                            clip-rule="evenodd" />
+                    </svg> </div>
                 <p class="text-sm">Average Rating</p>
             </div>
             <div class="text-center">
@@ -125,49 +122,34 @@ const stats = computed(() => {
             </div>
         </div>
     </section>
-
     <section class="container mx-auto px-4 pb-16 mt-8">
         <div class="flex flex-col text-white gap-4 max-w-4xl mx-auto">
-            <article v-for="testimonial in testimonials" 
-                    :key="testimonial.name" 
-                    class="transition-all">
+            <article v-for="testimonial in testimonials" :key="testimonial.name" class="transition-all">
                 <blockquote class="space-y-3 bg-black/30 p-4 rounded-lg">
                     <div class="text-sm md:text-lg italic whitespace-pre-line">
-                        <p>
-                            {{ expandedTestimonials.has(testimonial.name) || testimonial.description.split(' ').length <= 30
-                                ? testimonial.description 
-                                : testimonial.description.split(' ').slice(0, 30).join(' ') + '...' }}
-                            
-                            <button 
+                        <p> {{ expandedTestimonials.has(testimonial.name) || testimonial.description.split(' ').length
+                            <= 30 ? testimonial.description :
+                                testimonial.description.split(' ').slice(0, 30).join(' ') + ' ...' }} <button
                                 v-if="testimonial.description.split(' ').length > 30"
-                                @click="expandedTestimonials.has(testimonial.name) 
-                                    ? expandedTestimonials.delete(testimonial.name) 
-                                    : expandedTestimonials.add(testimonial.name)"
-                                class="font-normal underline text-sm ml-2">
-                                {{ expandedTestimonials.has(testimonial.name) ? 'Show Less' : 'Read More' }}
-                            </button>
-                        </p>
+                                @click="expandedTestimonials.has(testimonial.name) ? expandedTestimonials.delete(testimonial.name) : expandedTestimonials.add(testimonial.name)"
+                                class="font-normal underline text-sm ml-2"> {{
+                                    expandedTestimonials.has(testimonial.name) ? 'Show Less' : 'Read More' }} </button> </p>
                     </div>
-                    <footer class="mt-4">
-                        <cite class="not-italic">
+                    <footer class="mt-4"> <cite class="not-italic">
                             <div class="font-medium">{{ testimonial.name }}</div>
                             <div class="text-sm">{{ testimonial.title }}</div>
                         </cite>
-                        <div class="flex mt-2 text-amber-400">
-                            <svg v-for="n in testimonial.stars" 
-                                 :key="n"
-                                 xmlns="http://www.w3.org/2000/svg" 
-                                 viewBox="0 0 24 24" 
-                                 fill="currentColor" 
-                                 class="w-4 h-4">
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                            </svg>
-                        </div>
+                        <div class="flex mt-2 text-amber-400"> <svg v-for="n in testimonial.stars" :key="n"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-4 h-4">
+                                <path fill-rule="evenodd"
+                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                    clip-rule="evenodd" />
+                            </svg> </div>
                     </footer>
                 </blockquote>
             </article>
         </div>
     </section>
-
     <Footer />
 </template>

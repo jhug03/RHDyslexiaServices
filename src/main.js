@@ -6,7 +6,10 @@ import './index.css'
 
 export const createApp = ViteSSG(
   App,
-  { routes },
+  {
+    routes,
+    scrollBehavior: (to, from, savedPosition) => savedPosition || { top: 0 }
+  },
   ({ app, router, isClient }) => {
     const head = createHeadOld()
     app.use(head)
